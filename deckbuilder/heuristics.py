@@ -9,7 +9,6 @@ def recommended_land_count(archetype):
     return 24
 
 def score_card(card, archetype):
-    """Return a numerical score. We keep it primitive to show the concept."""
     ctype = card.get("type_line", "").lower()
     oracle = card.get("oracle_text", "").lower()
 
