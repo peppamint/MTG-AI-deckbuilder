@@ -8,7 +8,8 @@ def recommended_land_count(archetype):
         return 26
     return 24
 
-def score_card(card, archetype):
+def score_card(card, archetype, currentTotal, budget):
+
     ctype = card.get("type_line", "").lower()
     oracle = card.get("oracle_text", "").lower()
 
