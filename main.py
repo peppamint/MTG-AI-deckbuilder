@@ -8,7 +8,11 @@ def format_deck(deck):
     return "\n".join(out)
 
 def main():
-    colors = ["R", "G"]
+    raw_colors = input("Enter colors (comma separated letters, e.g. R,G,U):")
+    colors = [c.strip() for c in raw_colors.split(",")]
+
+    
+
     archetype = "aggro"
     budget = False
 
